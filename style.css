@@ -1,0 +1,286 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+:root {
+  /* Generic sizing for the page
+  --wrapper-height: 80vh;
+  --avatar-max-width: 8rem; */
+
+  /* Fonts for different elements
+  --font-family: sans-serif;
+  --font-family-header: sans-serif;
+  --font-family-list: monospace; */
+
+  /* Colors you'll see cascade through the elements - not currently in use */
+  --color-bg: #ffe5f3; /* Used for the page body background */
+  --color-bg-alt: #ffffff; /* Used for social icons on hover */
+  --color-text-main: #000000; /* List text ann social icons on hover */
+  --color-primary: #80144e; /* Headers and borders */
+  --color-header: #f4bedb;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    animation: line 0.0s !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  box-sizing: border-box;
+  margin: 3% auto;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 3%;
+}
+
+body {
+  background-color: white;
+  color: var(--color-text-main);
+  font-family: Verdana;
+  overflow: auto;
+  height: 100vh;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.footer {
+  margin-top: auto;
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+  padding: 10px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 1.1px;
+}
+
+#main-navbar{
+  body,
+  html {
+    width: 100%;
+    height: 100%;
+    background: #1c1d22;
+    font-family: "VT323", monospace;
+  }
+}
+
+#main-navbar .menu {
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  max-width: 720px;
+  margin: 0 auto;
+  height: 30dvh;
+  list-style: none;
+  font-family: "VT323", monospace;
+  padding-block: 2%;
+}
+
+#main-navbar .menu li {
+  width: 125px;
+  height: 50px;
+  transition: background-position-x 0.9s linear;
+  text-align: center;
+
+  a {
+    font-size: 22px;
+    color: #777;
+    text-decoration: none;
+    transition: all 0.45s;
+  }
+
+  &:hover {
+    background-image:
+    url("/images/running-luigi.gif"),
+    linear-gradient(to right, rgba(240, 80, 178, 0.6), rgba(202, 93, 31, 0.6), rgba(183, 53, 235, 0.6), rgba(87, 164, 226, 0.6));
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, contain;
+    animation: line 4s;
+    animation-direction: reverse;
+    background-size: contain;
+    height: 60px;
+  }
+
+  &:hover a {
+    color: #0088cc;
+  }
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+/* Keyframes for the hover animation */
+@keyframes line {
+  0% {
+    background-position-x: 390px;
+  }
+}
+
+#other-font {
+  font-family: 'Just Another Hand';
+  text-decoration:underline dashed 2px #ab33f0;
+  text-underline-offset: 15%;
+  padding: 10px;
+
+  .center-block {
+    text-align: center;
+    width: 50%; /* Optional, but recommended for margin: auto to work effectively */
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid black; /* For visibility */
+    padding: 10px;
+    font-size: x-large;
+  }
+}
+
+#warm-cottage{
+  font-family: 'VT323', monospace;
+  font-weight: bolder;
+    
+  .snow-container {
+    position: relative;
+    overflow: hidden;
+    background-image: url("/images/backgrounds/mountain-ground-decorative-transparent.jpg");
+    background-size: contain;
+  }
+
+  .snow {
+    position: absolute; /* Position relative to the container */
+    border-radius: 50%;
+    animation: fall linear infinite;
+    pointer-events: none; /* Allows clicks on content behind the snow */
+    background-color: transparent;
+  }
+
+  @keyframes fall {
+    0% { top: -10%; }
+    100% { top: 100%; }
+  }
+
+  .center-block {
+    width: 50%; /* Optional, but recommended for margin: auto to work effectively */
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid black; /* For visibility */
+    padding: 10px;
+    font-size: large;
+    z-index: 0;
+  }
+}
+
+/* Anchored Scrolling Box w/ Tablinks */
+/* from https://www.neopets.com/~Kalkrath#inner_link_one */
+#tabbed_scrolly_box {
+
+.width_control {
+  width: 515px;
+  margin: 0px auto;
+}
+.tabbed_scrolly_box_header {  
+  text-align: left;
+  margin: 20px auto 0px auto;
+  width: auto;
+  padding: 6px 0px 3px 0px;
+  border-bottom: 3px solid LIGHTBLUE;
+  line-height: 20px;
+}
+.tabbed_scrolly_box_header a {
+  margin: 0px 6px;
+  padding: 8px 14px;
+  color: WHITE;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+  font-weight: bold;
+  background-color: LIGHTBLUE;
+  border-bottom: 1px solid LIGHTBLUE;
+  z-index: 1;
+}
+.tabbed_scrolly_box_header a:hover  {
+  color: LIGHTBLUE;
+  background-color: ALICEBLUE;
+  border-bottom: 1px solid ALICEBLUE;
+  z-index: 10;
+}
+.magic_window {
+  width: auto;
+  height: 340px;
+  overflow: hidden;
+  margin: -60px auto 0px auto;
+}
+.interior_anchor {
+  padding-top: 60px
+}
+.interior_scroll {
+  width: auto; 
+  height: 250px; 
+  overflow: auto;
+  padding: 0px 17px 0px 14px; 
+  margin: 0px auto 20px auto;   
+  border-width: 10px 5px;
+  border-style: solid;
+  border-color: ALICEBLUE;
+  background-color: ALICEBLUE;
+  z-index: 5;
+}
+.interior_scroll p {
+  width: auto;
+  text-align: justify; 
+  text-indent: 20px;
+  margin: 14px 10px;
+}
+.scrolly_box_centered_p {
+  text-align: center !important;
+  text-indent: 0px !important;
+}
+}
+
+
+/* Responsive Etsy Widget Styles */
+/* Default: show desktop version */
+.etsy-widget-desktop {
+  display: block;
+}
+
+.etsy-widget-tablet,
+.etsy-widget-mobile {
+  display: none;
+}
+
+/* Tablet (between 768px and 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .etsy-widget-desktop {
+    display: none;
+  }
+  
+  .etsy-widget-tablet {
+    display: block;
+  }
+}
+
+/* Mobile (up to 767px) */
+@media screen and (max-width: 767px) {
+  .etsy-widget-desktop,
+  .etsy-widget-tablet {
+    display: none;
+  }
+  
+  .etsy-widget-mobile {
+    display: block;
+  }
+}
+   

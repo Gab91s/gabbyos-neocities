@@ -1,0 +1,13 @@
+# workspace files
+.vscode/
+.cspell/
+
+logs/
+.directory
+node_modules/
+
+certs/
+
+notes/
+
+scss-styles/
