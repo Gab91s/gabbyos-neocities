@@ -1,0 +1,159 @@
+/*
+ * File: app\globals.css
+ * Description: [short description of the file's purpose]
+ *
+ * gabrielle-portfolio | Copyright (c) 2025 Gabrielle Saab
+ * Licensed under FIXME** | FIXME** <put license link here>
+ * Portions generated with ChatGPT, reviewed/modified by the author.
+ * Portions of this project include MIT-licensed code.
+ * Portions of this project include Apache 2.0-licensed code.
+ */
+
+/* Dark terminal-ish theme with subtle cyberpunk warmth, accessible contrast */
+:root {
+  --bg: oklch(0.1 0 0);
+  --panel: oklch(0.14 0 0);
+  --text: oklch(0.95 0 0);
+  --muted: oklch(0.78 0 0);
+  --accent: oklch(0.75 0.12 35); /* warm orange */
+  --accent-2: oklch(0.75 0.12 270); /* cool violet */
+  --border: oklch(0.3 0 0);
+  --green: oklch(0.82 0.12 145);
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+html { color-scheme: dark; }
+body {
+  margin: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  background: radial-gradient(1200px 800px at 20% 0%, #171717 20%, var(--bg)) fixed;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a { color: var(--green); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.section {
+  margin: 56px 0;
+  border-top: 1px dashed var(--border);
+  padding-top: 32px;
+}
+
+.h2 {
+  font-size: clamp(20px, 2vw, 28px);
+  color: var(--accent);
+  letter-spacing: 0.5px;
+  margin: 0 0 16px;
+}
+
+.terminal {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 20px;
+  box-shadow: 0 0 0 1px #000 inset, 0 20px 60px rgba(0,0,0,0.35);
+}
+
+.prompt {
+  color: var(--muted);
+}
+
+.badge {
+  display: inline-block;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(0,0,0,0.12));
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  margin-right: 8px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+}
+
+.card {
+  grid-column: span 12;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+}
+@media (min-width: 800px) {
+  .card--half { grid-column: span 6; }
+}
+
+.btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 10px 14px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  cursor: pointer;
+}
+.btn:hover { border-color: var(--accent); }
+
+footer {
+  margin: 64px 0 24px;
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Floating chat button */
+.chat-fab {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.815), rgba(0, 0, 0, 0.829));
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 50;
+}
+.chat-fab:focus { outline: 2px solid var(--accent); }
+
+/* Modal basics */
+.modal-backdrop {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.75);
+  display: grid; place-items: center;
+  z-index: 60;
+}
+.modal {
+  width: min(100%, 920px);
+  height: min(86vh, 760px);
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex; flex-direction: column;
+}
+.modal header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+}
+.modal iframe { flex: 1; border: 0; background: #0c0c0c; }
+.modal .close-btn {
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  font-size: 18px;
+  cursor: pointer;
+}

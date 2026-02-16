@@ -12,7 +12,7 @@
   --font-family-list: monospace; */
 
   /* Colors you'll see cascade through the elements - not currently in use */
-  --color-bg: #ffe5f3; /* Used for the page body background */
+  --color-bg: #80b1d842; /* Used for the page body background */
   --color-bg-alt: #ffffff; /* Used for social icons on hover */
   --color-text-main: #000000; /* List text ann social icons on hover */
   --color-primary: #80144e; /* Headers and borders */
@@ -38,7 +38,7 @@ html {
 }
 
 body {
-  background-color: white;
+  background-color: var(--color-bg);
   color: var(--color-text-main);
   font-family: Verdana;
   overflow: auto;
@@ -68,6 +68,10 @@ body {
   letter-spacing: 1.1px;
 }
 
+header {
+  height: 300px;
+}
+
 #main-navbar{
   body,
   html {
@@ -84,7 +88,7 @@ body {
   align-items:flex-start;
   max-width: 720px;
   margin: 0 auto;
-  height: 30dvh;
+  height: px;
   list-style: none;
   font-family: "VT323", monospace;
   padding-block: 2%;
@@ -133,11 +137,12 @@ body {
 
 #other-font {
   font-family: 'Just Another Hand';
-  text-decoration:underline dashed 2px #ab33f0;
+  /* text-decoration:underline dashed 2px #ab33f0; */
   text-underline-offset: 15%;
   padding: 10px;
+}
 
-  .center-block {
+ #other-font .center-block {
     text-align: center;
     width: 50%; /* Optional, but recommended for margin: auto to work effectively */
     margin-left: auto;
@@ -146,20 +151,19 @@ body {
     padding: 10px;
     font-size: x-large;
   }
-}
 
 #warm-cottage{
   font-family: 'VT323', monospace;
   font-weight: bolder;
-    
-  .snow-container {
+}
+ #warm-cottage .snow-container {
     position: relative;
     overflow: hidden;
     background-image: url("/images/backgrounds/mountain-ground-decorative-transparent.jpg");
     background-size: contain;
   }
 
-  .snow {
+  #warm-cottage .snow {
     position: absolute; /* Position relative to the container */
     border-radius: 50%;
     animation: fall linear infinite;
@@ -172,20 +176,19 @@ body {
     100% { top: 100%; }
   }
 
-  .center-block {
+  #warm-cottage .center-block {
     width: 50%; /* Optional, but recommended for margin: auto to work effectively */
     margin-left: auto;
     margin-right: auto;
-    border: 3px solid black; /* For visibility */
+    border: 0px solid black; /* For visibility while making changes */
     padding: 10px;
     font-size: large;
     z-index: 0;
   }
-}
 
 /* Anchored Scrolling Box w/ Tablinks */
 /* from https://www.neopets.com/~Kalkrath#inner_link_one */
-#tabbed_scrolly_box {
+/* #tabbed_scrolly_box {
 
 .width_control {
   width: 515px;
@@ -247,6 +250,65 @@ body {
   text-align: center !important;
   text-indent: 0px !important;
 }
+} */
+
+/* Minimal Anchored Scrolling Box w/ Tablinks */
+/* from https://www.neopets.com/~Kalkrath#inner_link_one */
+/* NOTE: use the tabbed_scrolly_box_header class's text-align property to change how the top links are aligned, ex: left, right, center.  */
+.width_control {
+  width: 530px;
+  margin: 0px auto;
+}
+.tabbed_scrolly_box_header {  	
+  text-align: center;
+  margin: 20px auto 0px auto;
+  width: auto;
+  padding: 10px 0px 10px 0px;
+  z-index: 10;
+}
+.tabbed_scrolly_box_header a {    
+  margin: 0px 6px;
+  padding: 6px 12px;
+  color: LIGHTBLUE;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+  font-weight: bold;
+  border: 1px solid LIGHTBLUE;
+}
+.tabbed_scrolly_box_header a:hover {
+  color: LIGHTBLUE;
+  background-color: ALICEBLUE;
+  border: 1px solid LIGHTBLUE;
+}
+.magic_window {
+  width: auto;
+  height: 350px;
+  overflow: hidden;
+  margin: -60px auto 0px auto;
+  z-index: 1;
+}
+.interior_anchor {
+  padding-top: 64px
+}
+.fancy_borders {
+  padding: 10px 15px;
+  border-top: 1px solid LIGHTBLUE;
+  border-bottom: 1px solid LIGHTBLUE;
+}
+.interior_scroll { 
+  height: 250px; 
+  overflow: auto;
+  padding: 0px 4px;
+}
+.interior_scroll p {
+  width: auto;
+  text-align: justify; 
+  text-indent: 20px;
+  margin: 14px 10px;
+}
+.scrolly_box_centered_p {
+  text-align: center !important;
+  text-indent: 0px !important;
 }
 
 
@@ -259,6 +321,164 @@ body {
 .etsy-widget-tablet,
 .etsy-widget-mobile {
   display: none;
+}
+
+/* === iMood widget styling, regular and retro options |
+   === Later this can be modified to work with theme switcher */
+   
+   .imood-card{
+  max-width: 360px;
+  margin: 0 auto;
+  border: 2px solid rgba(255,255,255,.25);
+  border-radius: 14px;
+  background: rgba(0,0,0,.22);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 8px 30px rgba(0,0,0,.25);
+  overflow: hidden;
+  font-family: VT323, monospace;
+}
+
+.imood-card__top{
+  display:flex;
+  align-items:center;
+  gap:.6rem;
+  padding:.55rem .75rem;
+  border-bottom: 1px solid rgba(255,255,255,.15);
+  background: rgba(0,0,0,.25);
+}
+
+.imood-card__dot{
+  width:.65rem; height:.65rem;
+  border-radius: 999px;
+  background: #5dff8a;
+  box-shadow: 0 0 12px rgba(93,255,138,.6);
+}
+
+.imood-card__title{
+  letter-spacing: .05em;
+  text-transform: lowercase;
+}
+
+.imood-card__meta{
+  margin-left:auto;
+  opacity:.75;
+  font-size: .95em;
+}
+
+.imood-card__badge{
+  display:block;
+  padding:.8rem .8rem .6rem;
+  text-decoration:none;
+}
+
+.imood-card__badge img{
+  display:block;
+  width:100%;
+  max-width: 320px;
+  margin: 0 auto;
+  border-radius: 12px;
+  border: 2px solid rgba(255,255,255,.25);
+  image-rendering: pixelated;
+}
+
+.imood-card__bottom{
+  padding: .35rem .9rem .85rem;
+  border-top: 1px solid rgba(255,255,255,.12);
+}
+
+.imood-card__label{
+  display:block;
+  opacity:.9;
+}
+
+.imood-card__hint{
+  display:block;
+  opacity:.65;
+  font-size:.95em;
+  margin-top:.2rem;
+}
+
+/*  And the retro version:  */
+.retro-mood{
+  margin: 1rem auto;
+  border: 2px solid rgba(255,255,255,.25);
+  border-radius: 10px;
+  background: rgba(0,0,0,.25);
+  overflow: hidden;
+  font-family: 'VT323', monospace;
+  max-width: 360px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 8px 30px rgba(0,0,0,.25);
+}
+
+.retro-mood-header{
+  display:flex;
+  align-items:center;
+  gap:.5rem;
+  padding:.5rem .8rem;
+  background: rgba(0,0,0,.35);
+  border-bottom: 1px solid rgba(255,255,255,.15);
+  font-size: 1.1rem;
+}
+
+.retro-mood-led{
+  width:.6rem;
+  height:.6rem;
+  border-radius:999px;
+  background:#5dff8a;
+  box-shadow:0 0 10px #5dff8a;
+}
+
+.retro-mood-time{
+  margin-left:auto;
+  opacity:.7;
+  font-size:.9rem;
+}
+
+.retro-mood-body{
+  padding: .8rem;
+  text-align:center;
+}
+
+.retro-mood-body img{
+  width:100%;
+  max-width: 320px;
+  margin: 0 auto;
+  border-radius:12px;
+  border:2px solid rgba(255,255,255,.25);
+  image-rendering: pixelated;
+}
+
+.retro-mood-footer{
+  padding:.4rem .8rem;
+  border-top:1px solid rgba(255,255,255,.15);
+  opacity:.7;
+  font-size:.95rem;
+}
+
+.retro-command{
+  letter-spacing:.05em;
+}
+
+
+/* === Discord status css snippet from https://rice.place/other/discord.html |
+   === #status-blob, #status-details and .status*/
+#status-blob {
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  /* margin top to align is prob bad but... */
+  margin-top: 4px;
+}
+
+#status-details {
+  margin: 0;
+  padding-right: 5px;
+}
+
+.status {
+  display: flex;
+  flex-direction: row;
 }
 
 /* Tablet (between 768px and 1024px) */
