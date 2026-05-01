@@ -35,7 +35,7 @@
   </head>
   <body class="wrapper">
     <header>
-      <center><h1>The Midwest is Cold ❄️</h1></center>
+      <center><h1>The Midwest is Still Cold ❄️</h1></center>
     
       <nav aria-label="main-navbar" id="main-navbar">
         <ul class="menu">
@@ -52,7 +52,6 @@
         
       </nav>
     </header>
-    
     <main>
       <img src="./images/backgrounds/decor/April-15-2018-ice.png"
       style="position: fixed; right: 0px; bottom: 0px; height: auto; width: auto; z-index: -1; mask-image: radial-gradient(rgb(255, 255, 255), transparent 85%); 
@@ -61,17 +60,8 @@
       <section id="warm-cottage">
         <article class="snow-container" role="img" aria-label="This is an ASCII art of a cozy cottage in the snow">
           <div class="snowflakes">
-          <div class="snowflake snow"><img src="/images/snowflake.png" alt="Snowflake"></div>
-          <div class="snowflake snow">❄️</div>
-          <div class="snowflake snow">❄️</div>
-          <div class="snowflake snow">❄️</div>
-          <div class="snowflake snow">❄️</div>
-          <div class="snowflake snow">❄️</div>
-          <div class="snowflake snow">❄️</div>
-          <div class="snowflake snow">❄️</div>
-          <div class="snowflake snow">❄️</div>
-          <div class="snowflake snow">❄️</div>
-        </div>
+            <div class="snowflake snow"><img src="/images/snowflake.png" alt="Snowflake"></div>
+          </div>
         <p class="center-block" style="white-space: pre;" title="Stay Cozy ">
                                                                                 <color>## #</color>
                          ^                             ^                       <color># #</color>
@@ -101,7 +91,7 @@
 
   <div id="now" class="interior_anchor"></div>
   <div class="fancy_borders"><div class="interior_scroll">
-        <h3 class="scrolly_box_centered_p" style="right: 0px;"><span id="date-display"></span></h3>
+        <h3 class="scrolly_box_centered_p" style="right: 0px;"><span class="date-display"></span></h3>
         <p class="scrolly_box_centered_p">
           <!-- start discord status widget -->
         <a href="https://discord.com/users/880937194867548190">
@@ -1028,39 +1018,44 @@ Thanks for stopping by! We're re-stocking at the moment. You're still welcome to
     <script src="/scripts.js" defer></script>
     <!-- Countdown until Spring script https://www.w3schools.com/howto/howto_js_countdown.asp -->
      <script>
-// Set the date we're counting down to
-var countDownDate = new Date("Mar 20, 2026 10:46:25").getTime();
-// Update the count down every 1 second
-var x = setInterval(function() {
-  // Get today's date and time
-  var now = new Date().getTime();
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  // Output the result in an element with id="demo"
-//  document.getElementById("Spring").innerHTML = days + "d " + hours + "h "
-//  + minutes + "m " + seconds + "s ";
-  // re-wrote for Spring Countdown
-    document.getElementById("Spring").innerHTML = days + " more days ☀️ plus " + hours + " hours, "
-  + minutes + " minutes, and " + seconds + " more seconds";
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
-<!-- script to date current date -->
- <p>Today's date is: <span id="date-display"></span></p>
-
-<script>
-  document.getElementById('date-display').textContent = new Date().toLocaleDateString();
-</script>
-
+      // Set the date we're counting down to
+      var countDownDate = new Date("Mar 20, 2026 10:46:25").getTime();
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+        // Get today's date and time
+        var now = new Date().getTime();
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Output the result in an element with id="demo"
+      //  document.getElementById("Spring").innerHTML = days + "d " + hours + "h "
+      //  + minutes + "m " + seconds + "s ";
+        // re-wrote for Spring Countdown
+          document.getElementById("Spring").innerHTML = days + " more days ☀️ plus " + hours + " hours, "
+        + minutes + " minutes, and " + seconds + " more seconds";
+        // If the count down is over, write some text 
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
+   <!-- script to date current date -->
+    <p>Today's date is: <span class="date-display"></span></p>
+   <!--notes for CHANGELOG TODO**-->
+   <!-- 5-1-2026 Changing getElementById to getElementsByClassName and added loop in order to
+     apply the display-date variable to multiple elements | What if we used query selector instead?-->
+    <script>
+      //  document.getElementById('date-display').textContent = new Date().toLocaleDateString();
+      var elems = document.getElementsByClassName("date-display");
+      for(var i = 0; i < elems.length; i++) {
+        elems[i].textContent = new Date().toLocaleDateString();
+      }
+    </script>
   </body>
 <!--
   ˙✧˖°📷 ༘ ⋆｡˚🅾ⓕ
