@@ -1,0 +1,8 @@
+credit: 
+saved image: 
+ from this site, use with this code:
+
+" right-click, save, & upload to your own site. here's some code you can copy-paste to link back: "
+
+
+ <a href="https://hillhouse.neocities.org"> <img src="[image path]" width="88" height="31" alt="hillhouse" style="image-rendering:pixelated"> </a>
