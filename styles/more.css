@@ -1,0 +1,154 @@
+/* SPDX-License-Identifier: MIT */
+/* Copyright (c) 2025 Gabrielle Saab */
+/* //Adapted from: <URL or project name> */
+/*  ==== /styles/.more.css | 02/20/2026 initial purpose for use with ../more.html
+    ==== Adding styles for pages that are not planned to be for the homepage index.html
+    ==== To keep the styles.css file from becoming terrible to scroll - These could actually be combined into one file |
+*/
+
+/* Pixelated Rendering for Retro Digital Effect */
+:root {
+    font-synthesis:style;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: pixelated;
+    -moz-osx-font-smoothing: grayscale;
+    image-rendering: pixelated;
+}
+body {
+      background-image: url(/images/backgrounds/gray-floral.png)
+      radial-gradient(circle at 20% 10%, rgba(182, 240, 185, 0.956), transparent 65%),
+      radial-gradient(circle at 80% 20%, rgba(182, 240, 185, 0.925), transparent 65%),
+      radial-gradient(circle at 10% 70%, rgba(182, 240, 185, 0.956), transparent 65%),
+      linear-gradient(180deg, #0e6131d5, #167a24c4, #083002de);
+    }
+
+/* a side bar for the left aside on more.html | **TODO add on click css dropdown for mobile */
+#more-left .sidebar {
+  width: 20%;
+  padding-top: 20px;
+  float: left;
+}
+
+#more-left .sidebar img {
+  display: block;
+  margin: -30px auto 10px auto;
+  width: 220px;
+  z-index: 1;
+}
+
+#more-left .sidebar a {
+  text-decoration: none;
+  color: #666;
+  display: block;
+  font: 11pt Georgia;
+  border-bottom: 1px #ccc solid;
+  padding: 12px 22px;
+}
+
+ .rainbow:hover {
+      letter-spacing: 0px;
+      filter: none;
+      animation-name: rainbow;
+      animation-duration: 1.8s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
+
+    @keyframes rainbow {
+      0% {
+        color: #d593ff;
+      }
+
+      20% {
+        color: #00c3fe;
+      }
+
+      40% {
+        color: #8ef77b;
+      }
+
+      60% {
+        color: #f9d56a;
+      }
+
+      80% {
+        color: #fea17f;
+      }
+
+      100% {
+        color: #ff76b1;
+      }
+    }
+
+
+/* orbiting image(s) - adapted from: https://underwhite.neocities.org/tutorials/orbit
+  changes made according to https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-duration
+   */
+   
+.orbitingElement {
+  animation-name: orbitElementAnim;
+  animation-duration: 8.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes orbitElementAnim {
+  0% {
+  left: -25px;
+  top: -12px;
+  z-index: 1;
+  transform: scale(0.75);
+  }
+
+  25% {
+  transform: scale(1.0);
+  }
+
+  50% {
+  left: 64px;
+  top: 32px;
+  z-index: 1;
+  transform: scale(0.75);
+  }
+
+  55% {
+  z-index: -1;
+  }
+
+  75% {
+  transform: scale(0.5);
+  }
+
+  90% {
+  z-index: -1;
+  }
+
+  100% {
+  left: -25px;
+  top: -12px;
+  z-index: 1;
+  transform: scale(0.75);
+  }
+}
+/* end orbiting image(s) */
+
+/* ==== Mobile mods, Reduce motion, (dark mode styles are in style.css) ==== */
+/* Tablet (between 768px and 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* Mobile (up to 767px) */
+@media screen and (max-width: 767px) {
+}
+
+/* ... */
+@media (prefers-reduced-motion: no-preference) {
+}
+
+/* ... */
+@media (prefers-reduced-motion:reduce) {
+  /* animation-play-state: paused; */
+  *{
+    animation: none !important;
+    transition: none !important;
+  }
+}

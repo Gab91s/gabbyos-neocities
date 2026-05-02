@@ -10,27 +10,29 @@
 
 ## TODO**
 
-- [ ] meow
-- [ ] some other things
-- [ ] change me**
-- [ ] fix me**
-- [ ] create project snippets - (when to use "scope"?)
-- [X] ~~choose license and copyright notice~~ ✓
-- [ ] add 3rd party license files and 3rd party copyright notices
-- [ ] (Please don\'t come for me, I still need to fix-add the attributions!!!)
-- [ ] hmm
-- [ ] add proper Head and alt tags -> etcetera to account for a11y
-- [ ] more things
-- [ ] Edit this README to have correct markdown format with links listed in a link definition reference list - FIXME**
+- [ ] meow  
+- [ ] some other things  
+- [ ] change me**  
+- [ ] fix me**  
+- [ ] create project snippets  
+- [X] ~~choose license and copyright notice~~ ✓  
+- [ ] add 3rd party license files and 3rd party copyright notices  
+- [ ] (Please don\'t come for me, I still need to fix-add the attributions!!!)  
+- [ ] hmm  
+- [ ] add proper Head and alt tags -> etcetera to account for a11y  
+- [ ] more things  
+- [ ] Edit this README to have correct markdown format with links listed in a link definition reference list - FIXME**  
 
 ## File Tree
+
+TODO** - want to try one of the cli tools for creating a tree from filepath
 
 ## License & Copyright
 
 This webpage includes some third-party code and media. Any and all third-party code and media belongs to its rightful owners and is subject to it's own license, copyright, and terms.
 
 Original website Source code written by Gabrielle Saab is licensed under MIT.
-Original media (including, but not limited to text, images, artwork, and branding) by © 2025-2026 Gabrielle Saab is licensed under CC BY-NC-SA 4.0 All rights reserved.
+Original media (including, but not limited to text, images, artwork, and branding) by © 2010-2026 Gabrielle Saab is licensed under CC BY-NC-SA 4.0 All rights reserved.
 See </LICENSE> and </NOTICE>
 
 ## Colophon
@@ -47,6 +49,9 @@ See </LICENSE> and </NOTICE>
 ### Inspo | Reference | Attribution
 
 These buttons lead to sites that have inspired me or that I have used images or code snippets from! There will be a future html page linked with these listed along with a section for sites that I liked, and may have felt inspired by, however did not use code or images from. ```<3 `
+
+- [(Rosemary at Hill House on Neocities)]<https://hillhouse.neocities.org/materials/snippets>
+- Sparkle Mouse Trail [Tinkerbell Magic Sparkle]<http://www.mf2fm.com/rv>
 
 #### Credit Links without buttons
 
@@ -72,11 +77,17 @@ These buttons lead to sites that have inspired me or that I have used images or 
 
 [Arthur Byrne] <https://www.goodreads.com/quotes/7517370-even-william-faulkner-said-of-hemingway-he-has-never-been>
 
+[(Rosemary at Hill House on Neocities)] <https://hillhouse.neocities.org/materials/snippets>
+
+[Tinkerbell Magic Sparkle] <http://www.mf2fm.com/rv>
+
  ---
 
 [Good Reads]: https://www.goodreads.com/quotes/290965-poor-faulkner-does-he-really-think-big-emotions-come-from
 [Markdown Guide]: https://www.markdownguide.org/
 [Arthur Byrne]: https://www.goodreads.com/quotes/7517370-even-william-faulkner-said-of-hemingway-he-has-never-been
+[(Rosemary at Hill House on Neocities)]: https://hillhouse.neocities.org/materials/snippets
+[Tinkerbell Magic Sparkle]:https://www.mf2fm.com/rv
 
 ---
 

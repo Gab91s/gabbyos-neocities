@@ -6,45 +6,88 @@
     <title>GabbyOS | Random Things go Here for Now | A Personal Page</title>
 
     <!-- Favicons -->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<!-- basic favicon -->
-<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- basic favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="styles/more.css" rel="stylesheet" type="text/css" media="all">
     <link href="/scripts.js" rel="script" type="text/javascript" media="all">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=VT323&display=swap" rel="stylesheet">
   </head>
-  <body class="wrapper">
-    <header>
+  <body>
+    <div class="wrapper">
+    <header class="header">
       <center><h1>It's Like It's 2005 ¯\_(ツ)_/¯ ᓚᘏᗢ</h1></center>
+
       <nav aria-label="main-navbar" id="main-navbar">
         <ul class="menu">
           <li><a href="/index.html" title="Stay Warm">Home</a></li>
           <li>New Links Coming Soon &hearts; </li>
-          <li title="info '(coreutils) whoami invocation" alt="page coming soon"><a href="index.html/#whoami" title="info '(coreutils) whoami invocation">whoami</li>
+          <li title="info '(coreutils) whoami invocation" alt="page coming soon"><a href="/index.html#whoami" title="info '(coreutils) whoami invocation">whoami</li>
           <li><a href="/index.html#contact" alt="page coming soon" title="Social Media accounts and things">Contact</a></li>
           <li title="link coming soon"><!--<a href="/projects.html" title="Some apps and websites I've worked on">-->Projects</li>
           <!-- <li><a href="/desktop.html" title="Login to GabbyOS">Desktop</a></li> -->
           <li><a  aria-current="page" href="#!" title="You're Here Now">Other</a></li>
           <li><a href="/about.html" title="About this website; credits">About</a></li>
-
         </ul>
       </nav>
       <center><h2>🦂 ♏ ☦ ☯ ☮ 🍵 ☃ ⚛ </h2></center>
     </header>
-    <main>
-      <section id="other-font">
-        <article id="Original-Works" class="center-block">
+
+    <aside class="leftSide">
+      <p class="cell-label-vis">Left Side</p>
+      <section id="embed-music">
+        <iframe src="https://archive.org/embed/CCF-2000/Cartoon+Cartoon+Fridays+2000+The+Mayor+Hosts/VIDEO_TS/VTS_01_2.VOB" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen=""></iframe>
+      </section> <!-- end section for embed-music player -->
+      <section id="silly-imood-banner-ad">
+      <p style="padding:10%;">
+        <form method="POST" action="http://www.imood.com/inav.cgi">
+          <table border="0" cellpadding="5">
+            <tr>
+              <td class="ban" width="400" height="60" background="//images.imood.com/banners/imood-bi.jpg" valign="middle" align="right">
+                <b>How is your friend feeling?</b> <br>
+                <input type="text" name="nav" value="your_friend@email.com">
+                <input type="submit" name="submit" value="GO!">
+              </td>
+            </tr>
+          </table>
+        </form>
+      </p>
+      </section>
+      <!-- closing aside for Left Side aside -->
+    </aside>
+    <main class="main">
+      <!-- can put code for fixed or absolute background decor here -->
+      <!--for sub-header banner-- **only if its narrow... otherwise it should go in the header to not take the space of the asides -- can out code for sub-heading banner here -->
+      <div class="cell">
+        <!-- online status from discord -->
+        <article id="other-font" style="font-size:xx-large; padding-left: 45%; padding-right: 40%;">
+          <div class="status">
+            <p id="status-details">loading...</p>
+            <div id="status-blob"></div>
+          </div>
+        </article>
+      </div> <!-- end div with cell class wrapper for discord online status -->
+
+      <div id="other-font" class="inner-layout">
+        <div class="cell">
+          <p class="cell-label-vis">1st inner cell</p>
+        </div>
+        <div class="cell">
+          <p class="cell-label-vis">2nd Inner Cell</p>
+        <section id="Original-Works">
           <h2>Get Some Fun, Original Artwork</h2>
           <!-- Widget for Ciara's Etsy Shop -->
            <!-- Widget code for mini shop  -->
-          <div style="text-align:center; max-width: 100%; overflow-x: auto;">
+            <!-- <style="text-align:center; max-width: 100%; overflow-x: auto;" -->
+          <article>
             <script type='text/javascript' src='https://www.etsy.com/assets/js/etsy_mini_shop.js'></script>
             <!-- Desktop Version -->
             <div class="etsy-widget-desktop">
@@ -64,50 +107,120 @@
                 new Etsy.Mini(63959758, 'gallery', 1, 1, 0, 'https://www.etsy.com');
               </script>
             </div>
-          </div>
+          </article>
            <!-- <script type='text/javascript' src='https://www.etsy.com/assets/js/etsy_mini_shop.js'></script>
             <script type='text/javascript'>new Etsy.Mini(63959758,'gallery',1,1,0,'https://www.etsy.com');</script>-->
-        </article>
-
-        <article id="outlinks" class="center-block">
+        </section>
+        </div> <!-- end 2nd inner cell div -->
+          <div class="cell">
+        <p class="cell-label-vis">3rd inner cell</p>
+        </div>
+        <div class="cell">
+        <p class="cell-label-vis">4th inner cell</p>
+        </div>
+        <div class="cell">
+        <section id="outlinks">
         <h2>Random Things</h2>
         <p>Here are some random things, plus links to websites that I have saved images or code snippets from,
           and have otherwise found fun!
         </p>
+        <article>
         <!-- Maybe this should be saved with the project instead of hotlinked? -->
         <a href="https://www.neopets.com/faerieland/personality.phtml">
           <img src="https://images.neopets.com/faerieland/eath_faerie_icon.gif" title="You and earth faeries are alike. You both enjoy working with your hands and watching things grow.">
         </a>
-        <br>&nbsp;&nbsp;&nbsp;<br>
-        <div class="status" style="justify-content: center;">
-        <p id="status-details">loading...</p>
-        <div id="status-blob"></div>
-        </div>
-        <br>
+
+        &nbsp;&nbsp;&nbsp;
+
         <iframe src="https://discord.com/widget?id=1317367350902657074&theme=dark" 
         width="350" height="500" allowtransparency="true" frameborder="0" 
         sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
         <!-- <br><img src="https://api.lanyard.rest/880937194867548190.jpg"></img>
         <a href="https://discord.com/users/880937194867548190"><img src="https://lanyard.cnrad.dev/api/880937194867548190?hideActivity=true" /></a><br> -->
-        <br>
-        <a href="/~watties"><img src="http://dl.dropboxusercontent.com/s/q3jm1vhvos26l1r/Watties50x50WHITE.png"></a>
-        
+        </article>
+        </section>
+        </div>
+        <div class="cell">
+          <p class="cell-label-vis">6th inner cell</p>
+        <!-- music player - ipod code adapted from https://hillhouse.neocities.org/materials/snippets-->
+        <!-- <div id="music-player">
+        <div class="ipod">
+          <div class="screen">
+          <b> placeholder </b>
+          <audio controls>
+          <source src=".mp3" type="audio/mpeg">
+          </audio>
+          <div class="caption"> (caption) </div> </div>
+          <div class="button"> <div class="b b-top">▶</div><div
+          class="b b-left">⏮︎</div><div class="b b-right">
+          ⏭︎</div><div class="b b-bottom">❚❚</div> <div
+        class="button"> </div> </div>
+        </div> <!-- end of ipod music player widget -->
+        <!-- </div> end of #music-player ID -->
+        </div> <!-- end of 6th .inner-cell -->
+        <div class="cell">
+        <p class="cell-label-vis">7th inner cell</p>
+        </div>
+        <div class="cell">
+          <!-- pinterest widget, should replace with widget from pinterest's website? -->
+          <article>
+            <iframe src="https://petracoding.github.io/pinterest/board.html?link=gabs91/yarn/&hideHeader=0&hideFooter=0&transparent=1"></iframe>
+          </article>
+        </div> <!-- end 8th div cell, which has pinterest widget(s) -->
+          <div class="cell">
+            <p class="cell-label-vis">9th inner cell</p>
+            <!-- ravelry widget -->
+          </div>
+          <div class="cell">
+          <p class="cell-label-vis">10th inner cell</p>
+          </div>
+          <div class="cell">
+            <p class="cell-label-vis">11th inner cell</p>
+          <section id="more-outlinks">
+            <article>
+          <a href="https://neopets.com/~watties" title="~Watties on Neopets | If you don't already have an account, I'd be tickled if you used my referral link below ^-^">
+            <img src="http://dl.dropboxusercontent.com/s/q3jm1vhvos26l1r/Watties50x50WHITE.png"></a>
+
           <p align="right">
 	        <a href="https://thefrugalgamer.net" target="_blank" rel="noopener noreferrer">
 	          <img src="/images/longhorn_pink.png" height="250px" title="Pink longhorn by TheFrugalGamer.net">
 	        </a>
 	      </p>
+          </article>
+        </section>
+        </div>
+        <div class="cell">
+        <p class="cell-label-vis">12th inner cell</p>
+        </div>
+        <div class="cell">
+        <p class="cell-label-vis">10.5 inner cell</p>
+          <div style="position: relative;">
+          <img style="position: relative;" id="planet" src="/images/snowflake2.png">
+          <img class="orbitingElement" style="position: absolute; top: -12px; left: -25px;"
+           id="moon" src="/images/running-luigi.gif"> </div>
 
-        <!--<h3>Giffys</h3>-->
+        </div>
+         <div class="cell">
+        <p class="cell-label-vis">11.5 inner cell</p>
+        </div>
+        <div class="cell">
+        <p class="cell-label-vis">12.5 inner cell</p>
+        </div>
+        <div class="cell">
+        <p class="cell-label-vis">13th inner cell</p>
+        </div>
+        <div class="cell">
+          <p class="cell-label-vis">14th inner cell</p>
+       <article>
        <h3 alt="Links to Fun Websites"># Credits.md</h3>
        <sub>*Under Construction* Still in the process of adding credits and attributions 🙏 Thanks!
         <br>
         Some attributions may only be linked where their work is used, as opposed to listed here.
          Some sources may be attributed in bulk rather than per image/item. <br>If you see something
          that should be credited but isn't, please let me know!
-      </sub>
-      <p><sub> Please Note: going to any of these pages is at your own risk.</sub></p>
-       <a href="https://www.deviantart.com/lady-pixel/art/Running-Luigi-Avatar-822020448" target="_blank"><!--<sub>Running Luigi Avatar by Lady-Pixel on DeviantArt:</sub>-->
+        </sub>
+        <p><sub> Please Note: content on this site is safe for work, but keep in mind some links out may not be.</sub></p>
+       <a href="https://www.deviantart.com/lady-pixel/art/Running-Luigi-Avatar-822020448" target="_blank" rel="noopener noreferrer"><!--<sub>Running Luigi Avatar by Lady-Pixel on DeviantArt:</sub>-->
         <p>
         <img src="./images/credits/lady-pixel.gif" title="Lady-Pixel on Deviant Art | Running Luigi Avatar by Lady-Pixel">
        </a>
@@ -115,203 +228,158 @@
        <a href="https://thefrugalgamer.net" target="_blank" rel="noopener noreferrer">
         <img src="./images/credits/frugalgamer_button.png" title="Pink Longhorn Adoptable by TheFrugalGamer.net">
         </a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.mf2fm.com/rv" target="_blank" rel="noopener noreferrer">
+          <img src="images/credits/mf2fm88x31.gif" title="RV's free Javascript/DHTML effects | Sparkly mouse trail">
+        </a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="" target="_blank" rel="noopener noreferrer">
+          <img src="images/credits/sadgrl_button-new.gif" title="">
+        </a>
         </p>
-        <p><a href="https://mburakerman.github.io/" alt="mburakerman.github.io" title="Link to Mehmet Burak Erman's website">https://mburakerman.github.io/</a></p>
+        <p><a href="https://mburakerman.github.io/" alt="mburakerman.github.io"
+           title="Link to Mehmet Burak Erman's website">https://mburakerman.github.io/</a></p>
         </article>
-        </section>
-      <!--
-      <p>Here are some giffys I made!</p>
-      <p>
-        <img src="/images/giffys/blue_heart.gif" alt="Blue Heart Gif" title="Blue Heart Gif">
-        <img src="/images/giffys/purple_heart.gif" alt="Purple Heart Gif" title="Purple Heart Gif">
-        <img src="/images/giffys/pink_heart.gif" alt="Pink Heart Gif" title="Pink Heart Gif">
-        <img src="/images/giffys/green_heart.gif" alt="Green Heart Gif" title="Green Heart Gif">
-        <img src="/images/giffys/yellow_heart.gif" alt="Yellow Heart Gif" title="Yellow Heart Gif">
-        <img src="/images/giffys/red_heart.gif" alt="Red Heart Gif" title="Red Heart Gif">
-      </p>
+        </div>
+        <div class="cell">
+        <p class="cell-label-vis">15th inner cell</p>
+        </div>
+         <div class="cell">
+        <p class="cell-label-vis">16th inner cell</p>
+        </div>
+        <div class="cell">
+        <p class="cell-label-vis">17th inner cell</p>
+        </div>
+        <div class="cell">
+          <p class="cell-label-vis">18th inner cell
+          <iframe id='kofiframe'
+           src='https://ko-fi.com/gabbysaab/?hidefeed=true&widget=true&embed=true&preview=true'
+           style='border:none;width:100%;padding:4px;background:#f9f9f9;'
+           height='712' title='gabbysaab'>
+          </iframe>
+        </div>
+        <div class="cell">
+        <p class="cell-label-vis">19th inner cell</p>
+        </div>
+         <div class="cell">
+        <p class="cell-label-vis">20th inner cell</p>
+        </div>
+        <div class="cell">
+        <p class="cell-label-vis">21st inner cell</p>
+        </div>
+        <div class="cell">
+        <p class="cell-label-vis">22nd inner cell</p>
+        </div>
+         <div class="cell">
+        <p class="cell-label-vis">23rd inner cell</p>
+        </div>
+        <div class="cell">
+        <p class="cell-label-vis">24th inner cell</p>
+        </div>
+      </div> <!-- div closing ends inner-layout -->
+    </main>
 
-      <h3>Icons</h3>
-      <p>Here are some icons I made!</p>
-      <p>
-        <img src="/images/icons/icon_apple.png" alt="Apple Icon" title="Apple Icon" height="100px">
-        <img src="/images/icons/icon_banana.png" alt="Banana Icon" title="Banana Icon" height="100px">
-        <img src="/images/icons/icon_grape.png" alt="Grape Icon" title="Grape Icon" height="100px">
-        <img src="/images/icons/icon_lemon.png" alt="Lemon Icon" title="Lemon Icon" height="100px">
-        <img src="/images/icons/icon_orange.png" alt="Orange Icon" title="Orange Icon" height="100px">
-        <img src="/images/icons/icon_strawberry.png" alt="Strawberry Icon" title="Strawberry Icon" height="100px">
-      </p>
+    <aside class="rightSide">
+      <section>
+        <!-- Widget from Goodreads (This is two book widgets from Goodreads stacked on top of each other) -->
+        <style type="text/css" media="screen">
+          .gr_grid_container {
+            /* customize grid container div here. eg: width: 500px; */
+            width: 410px;
+            /* position:absolute; */
+            right: 5px;;
+          }
 
-      <h3>Adoptables</h3>
-      <p>Here are some adoptables I made!</p>
-      <p>
-        <img src="/images/adoptables/adoptable_cat.png" alt="Adoptable Cat" title="Adoptable Cat" height="150px">
-        <img src="/images/adoptables/adoptable_dog.png" alt="Adoptable Dog" title="Adoptable Dog" height="150px">
-        <img src="/images/adoptables/adoptable_bunny.png" alt="Adoptable Bunny" title="Adoptable Bunny" height="150px">
-        <img src="/images/adoptables/adoptable_fox.png" alt="Adoptable Fox" title="Adoptable Fox" height="150px">
-      </p>
-    -->
-  </main>
-  <aside style="bottom: 300px; position: absolute;">
-    <p>
-      <form method="POST" action="http://www.imood.com/inav.cgi">
-      <table border="0" cellpadding="5">
-      <tr>
-       <td class="ban" width="400" height="60" background="//images.imood.com/banners/imood-bi.jpg" valign="middle" align="right">
-        <b>How is your friend feeling?</b> <br>
-        <input type="text" name="nav" value="your_friend@email.com">
-       <input type="submit" name="submit" value="GO!">
-      </td>
-      </tr>
-      </table>
-      </form>
-    </p>
-  </aside>
-  <aside style="position: absolute; right:3%; border-style: double; background-blend-mode: color; backdrop-filter:blur(400px); border-width: 35px; display:flexbox;">
-          <style type="text/css" media="screen">
-        .gr_grid_container {
-          /* customize grid container div here. eg: width: 500px; */
-          width: 410px;
-          position:relative;
-          top: 00px;
-          right:0;
-        }
-
-        .gr_grid_book_container {
-          /* customize book cover container div here */
-          float: left;
-          width: 98px;
-          height: 160px;
-          padding: 0px 0px;
-          overflow: hidden;
-        }
-      </style>
-      <div id="gr_grid_widget_1771271472">
+          .gr_grid_book_container {
+            /* customize book cover container div here */
+            float: left;
+            width: 98px;
+            height: 160px;
+            padding: 0px 0px;
+            overflow: hidden;
+          }
+        </style>
+        <div id="gr_grid_widget_1771271472">
         <!-- Show static html as a placeholder in case js is not enabled - javascript include will override this if things work -->
           <div class="gr_grid_container">
-    <div class="gr_grid_book_container"><a title="Tithe (Modern Faerie Tales, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/46777.Tithe"><img alt="Tithe" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1342120818l/46777._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Faeries" rel="nofollow" href="https://www.goodreads.com/book/show/887201.Faeries"><img alt="Faeries" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1223151700l/887201._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Tales of Terror: 58 Short Stories Chosen by the Master of Suspense" rel="nofollow" href="https://www.goodreads.com/book/show/80140.Tales_of_Terror"><img alt="Tales of Terror: 58 Short Stories Chosen by the Master of Suspense" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388274035l/80140._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="The Velveteen Rabbit" rel="nofollow" href="https://www.goodreads.com/book/show/144974.The_Velveteen_Rabbit"><img alt="The Velveteen Rabbit" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347748913l/144974._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Trickster's Choice (Daughter of the Lioness, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/34197014-trickster-s-choice"><img alt="Trickster's Choice" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1486512395l/34197014._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Thief of Time (Discworld, #26; Death, #5)" rel="nofollow" href="https://www.goodreads.com/book/show/48002.Thief_of_Time"><img alt="Thief of Time" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388177603l/48002._SY160_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="A Fine and Private Place" rel="nofollow" href="https://www.goodreads.com/book/show/76718.A_Fine_and_Private_Place"><img alt="A Fine and Private Place" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327883034l/76718._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="The Last Unicorn (The Last Unicorn, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/29127.The_Last_Unicorn"><img alt="The Last Unicorn" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1524764327l/29127._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Into the Land of the Unicorns (The Unicorn Chronicles, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/114701.Into_the_Land_of_the_Unicorns"><img alt="Into the Land of the Unicorns" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388331416l/114701._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Guards! Guards! (Discworld, #8; City Watch, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/64216.Guards_Guards_"><img alt="Guards! Guards!" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1431127356l/64216._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="The Eye of the World (The Wheel of Time, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/228665.The_Eye_of_the_World"><img alt="The Eye of the World" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1659905815l/228665._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Little Women (Little Women, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/1934.Little_Women"><img alt="Little Women" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1562690475l/1934._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="A Gathering of Spies" rel="nofollow" href="https://www.goodreads.com/book/show/375592.A_Gathering_of_Spies"><img alt="A Gathering of Spies" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1387666745l/375592._SY160_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Red Scarf Girl: A Memoir of the Cultural Revolution" rel="nofollow" href="https://www.goodreads.com/book/show/219953.Red_Scarf_Girl"><img alt="Red Scarf Girl: A Memoir of the Cultural Revolution" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347669239l/219953._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="The Wish" rel="nofollow" href="https://www.goodreads.com/book/show/165405.The_Wish"><img alt="The Wish" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348972634l/165405._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="A Tale of Two Castles (A Tale of Two Castles, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/9466032-a-tale-of-two-castles"><img alt="A Tale of Two Castles" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1290214639l/9466032._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Cinderellis and the Glass Hill (The Princess Tales, #4)" rel="nofollow" href="https://www.goodreads.com/book/show/444328.Cinderellis_and_the_Glass_Hill"><img alt="Cinderellis and the Glass Hill" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347967146l/444328._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="The Princess Test (The Princess Tales, #2)" rel="nofollow" href="https://www.goodreads.com/book/show/183658.The_Princess_Test"><img alt="The Princess Test" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1566245095l/183658._SY160_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="The Fairy's Mistake (The Princess Tales, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/959433.The_Fairy_s_Mistake"><img alt="The Fairy's Mistake" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347374884l/959433._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Ever" rel="nofollow" href="https://www.goodreads.com/book/show/2204464.Ever"><img alt="Ever" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1349046851l/2204464._SX98_.jpg" /></a></div>
-  <noscript><br/>Share <a rel="nofollow" href="/">book reviews</a> and ratings with Gabrielle, and even join a <a rel="nofollow" href="/group">book club</a> on Goodreads.</noscript>
-  </div>
+            <div class="gr_grid_book_container"><a title="Tithe (Modern Faerie Tales, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/46777.Tithe"><img alt="Tithe" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1342120818l/46777._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="Faeries" rel="nofollow" href="https://www.goodreads.com/book/show/887201.Faeries"><img alt="Faeries" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1223151700l/887201._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="Tales of Terror: 58 Short Stories Chosen by the Master of Suspense" rel="nofollow" href="https://www.goodreads.com/book/show/80140.Tales_of_Terror"><img alt="Tales of Terror: 58 Short Stories Chosen by the Master of Suspense" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388274035l/80140._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="The Velveteen Rabbit" rel="nofollow" href="https://www.goodreads.com/book/show/144974.The_Velveteen_Rabbit"><img alt="The Velveteen Rabbit" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347748913l/144974._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="Trickster's Choice (Daughter of the Lioness, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/34197014-trickster-s-choice"><img alt="Trickster's Choice" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1486512395l/34197014._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="Thief of Time (Discworld, #26; Death, #5)" rel="nofollow" href="https://www.goodreads.com/book/show/48002.Thief_of_Time"><img alt="Thief of Time" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388177603l/48002._SY160_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="A Fine and Private Place" rel="nofollow" href="https://www.goodreads.com/book/show/76718.A_Fine_and_Private_Place"><img alt="A Fine and Private Place" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327883034l/76718._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="The Last Unicorn (The Last Unicorn, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/29127.The_Last_Unicorn"><img alt="The Last Unicorn" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1524764327l/29127._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="Into the Land of the Unicorns (The Unicorn Chronicles, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/114701.Into_the_Land_of_the_Unicorns"><img alt="Into the Land of the Unicorns" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388331416l/114701._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="Guards! Guards! (Discworld, #8; City Watch, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/64216.Guards_Guards_"><img alt="Guards! Guards!" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1431127356l/64216._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="The Eye of the World (The Wheel of Time, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/228665.The_Eye_of_the_World"><img alt="The Eye of the World" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1659905815l/228665._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="Little Women (Little Women, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/1934.Little_Women"><img alt="Little Women" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1562690475l/1934._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="A Gathering of Spies" rel="nofollow" href="https://www.goodreads.com/book/show/375592.A_Gathering_of_Spies"><img alt="A Gathering of Spies" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1387666745l/375592._SY160_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="Red Scarf Girl: A Memoir of the Cultural Revolution" rel="nofollow" href="https://www.goodreads.com/book/show/219953.Red_Scarf_Girl"><img alt="Red Scarf Girl: A Memoir of the Cultural Revolution" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347669239l/219953._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="The Wish" rel="nofollow" href="https://www.goodreads.com/book/show/165405.The_Wish"><img alt="The Wish" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348972634l/165405._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="A Tale of Two Castles (A Tale of Two Castles, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/9466032-a-tale-of-two-castles"><img alt="A Tale of Two Castles" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1290214639l/9466032._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="Cinderellis and the Glass Hill (The Princess Tales, #4)" rel="nofollow" href="https://www.goodreads.com/book/show/444328.Cinderellis_and_the_Glass_Hill"><img alt="Cinderellis and the Glass Hill" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347967146l/444328._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="The Princess Test (The Princess Tales, #2)" rel="nofollow" href="https://www.goodreads.com/book/show/183658.The_Princess_Test"><img alt="The Princess Test" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1566245095l/183658._SY160_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="The Fairy's Mistake (The Princess Tales, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/959433.The_Fairy_s_Mistake"><img alt="The Fairy's Mistake" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347374884l/959433._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="Ever" rel="nofollow" href="https://www.goodreads.com/book/show/2204464.Ever"><img alt="Ever" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1349046851l/2204464._SX98_.jpg" /></a></div>
+         <noscript><br/>Share <a rel="nofollow" href="/">book reviews</a> and ratings with Gabrielle, and even join a <a rel="nofollow" href="/group">book club</a> on Goodreads.</noscript>
+          </div>
+        </div>
+        <!-- <script src="https://www.goodreads.com/review/grid_widget/198544023.Gabrielle's%20bookshelf:%20read?cover_size=medium&hide_link=true&hide_title=true&num_books=24&order=d&shelf=read&sort=date_added&widget_id=1771271472" type="text/javascript" charset="utf-8"></script> -->
+        <!-- 2nd  widget -->
+        <style type="text/css" media="screen">
+          .gr_grid_container {
+            /* customize grid container div here. eg: width: 500px; */
+            width:405px;
+            /*   position:absolute; */
+            /* top: 5px; */
+            right: 5px;        }
 
-      </div>
-      <!-- <script src="https://www.goodreads.com/review/grid_widget/198544023.Gabrielle's%20bookshelf:%20read?cover_size=medium&hide_link=true&hide_title=true&num_books=24&order=d&shelf=read&sort=date_added&widget_id=1771271472" type="text/javascript" charset="utf-8"></script> -->
-      <!-- 2nd  widget -->
-             <style type="text/css" media="screen">
-        .gr_grid_container {
-          /* customize grid container div here. eg: width: 500px; */
-          width:405px;
-          position:relative;
-          top: 5px;
-          left: 5px;        }
-
-        .gr_grid_book_container {
-          /* customize book cover container div here */
-          float: left;
-          width: 98px;
-          height: 160px;
-          padding: 0px 0px;
-          overflow: hidden;
-        }
-      </style>
-      <div id="gr_grid_widget_1771271542">
+          .gr_grid_book_container {
+            /* customize book cover container div here */
+            float: left;
+            width: 98px;
+            height: 160px;
+            padding: 0px 0px;
+            overflow: hidden;
+          }
+        </style>
+        <div id="gr_grid_widget_1771271542">
         <!-- Show static html as a placeholder in case js is not enabled - javascript include will override this if things work -->
           <div class="gr_grid_container">
-    <div class="gr_grid_book_container"><a title="Pride and Prejudice" rel="nofollow" href="https://www.goodreads.com/book/show/129915654-pride-and-prejudice"><img alt="Pride and Prejudice" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1681804503l/129915654._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="1984" rel="nofollow" href="https://www.goodreads.com/book/show/61439040-1984"><img alt="1984" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1657781256l/61439040._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Jane Eyre" rel="nofollow" href="https://www.goodreads.com/book/show/10210.Jane_Eyre"><img alt="Jane Eyre" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1557343311l/10210._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="The Hobbit, or There and Back Again" rel="nofollow" href="https://www.goodreads.com/book/show/5907.The_Hobbit_or_There_and_Back_Again"><img alt="The Hobbit, or There and Back Again" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546071216l/5907._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Harry Potter and the Chamber of Secrets (Harry Potter, #2)" rel="nofollow" href="https://www.goodreads.com/book/show/15881.Harry_Potter_and_the_Chamber_of_Secrets"><img alt="Harry Potter and the Chamber of Secrets" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1474169725l/15881._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Harry Potter and the Goblet of Fire (Harry Potter, #4)" rel="nofollow" href="https://www.goodreads.com/book/show/58613424-harry-potter-and-the-goblet-of-fire"><img alt="Harry Potter and the Goblet of Fire" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1627044952l/58613424._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Harry Potter and the Deathly Hallows (Harry Potter, #7)" rel="nofollow" href="https://www.goodreads.com/book/show/58613224-harry-potter-and-the-deathly-hallows"><img alt="Harry Potter and the Deathly Hallows" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1627042661l/58613224._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="The Lion, the Witch and the Wardrobe (Chronicles of Narnia, #2)" rel="nofollow" href="https://www.goodreads.com/book/show/132080146-the-lion-the-witch-and-the-wardrobe"><img alt="The Lion, the Witch and the Wardrobe" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1697079942l/132080146._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Holes (Holes, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/38709.Holes"><img alt="Holes" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1618269830l/38709._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Where the Sidewalk Ends" rel="nofollow" href="https://www.goodreads.com/book/show/30119.Where_the_Sidewalk_Ends"><img alt="Where the Sidewalk Ends" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1769901144l/30119._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Charlotte’s Web" rel="nofollow" href="https://www.goodreads.com/book/show/24178.Charlotte_s_Web"><img alt="Charlotte’s Web" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1628267712l/24178._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="The Giver (The Giver, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/3636.The_Giver"><img alt="The Giver" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1342493368l/3636._SY160_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="James and the Giant Peach" rel="nofollow" href="https://www.goodreads.com/book/show/6689.James_and_the_Giant_Peach"><img alt="James and the Giant Peach" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1320412586l/6689._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="The Bad Beginning (A Series of Unfortunate Events, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/78411.The_Bad_Beginning"><img alt="The Bad Beginning" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1436737029l/78411._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Bridge to Terabithia" rel="nofollow" href="https://www.goodreads.com/book/show/40940121-bridge-to-terabithia"><img alt="Bridge to Terabithia" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1532478367l/40940121._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="The Witches" rel="nofollow" href="https://www.goodreads.com/book/show/6327.The_Witches"><img alt="The Witches" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1351707720l/6327._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Coraline" rel="nofollow" href="https://www.goodreads.com/book/show/17061.Coraline"><img alt="Coraline" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1493497435l/17061._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="The Wide Window[SUE #03 WIDE WINDOW][Hardcover]" rel="nofollow" href="https://www.goodreads.com/book/show/159777636-the-wide-window-sue-03-wide-window-hardcover"><img alt="The Wide Window[SUE #03 WIDE WINDOW][Hardcover]" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1696932788l/159777636._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="The Phantom Tollbooth" rel="nofollow" href="https://www.goodreads.com/book/show/378.The_Phantom_Tollbooth"><img alt="The Phantom Tollbooth" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1558858485l/378._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Island of the Blue Dolphins" rel="nofollow" href="https://www.goodreads.com/book/show/41044096-island-of-the-blue-dolphins"><img alt="Island of the Blue Dolphins" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1533405446l/41044096._SX98_.jpg" /></a></div>
-  <noscript><br/>Share <a rel="nofollow" href="/">book reviews</a> and ratings with Gabrielle, and even join a <a rel="nofollow" href="/group">book club</a> on Goodreads.</noscript>
-  </div>
-
-      </div>
+            <div class="gr_grid_book_container"><a title="Pride and Prejudice" rel="nofollow" href="https://www.goodreads.com/book/show/129915654-pride-and-prejudice"><img alt="Pride and Prejudice" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1681804503l/129915654._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="1984" rel="nofollow" href="https://www.goodreads.com/book/show/61439040-1984"><img alt="1984" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1657781256l/61439040._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="Jane Eyre" rel="nofollow" href="https://www.goodreads.com/book/show/10210.Jane_Eyre"><img alt="Jane Eyre" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1557343311l/10210._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="The Hobbit, or There and Back Again" rel="nofollow" href="https://www.goodreads.com/book/show/5907.The_Hobbit_or_There_and_Back_Again"><img alt="The Hobbit, or There and Back Again" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546071216l/5907._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="Harry Potter and the Chamber of Secrets (Harry Potter, #2)" rel="nofollow" href="https://www.goodreads.com/book/show/15881.Harry_Potter_and_the_Chamber_of_Secrets"><img alt="Harry Potter and the Chamber of Secrets" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1474169725l/15881._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="Harry Potter and the Goblet of Fire (Harry Potter, #4)" rel="nofollow" href="https://www.goodreads.com/book/show/58613424-harry-potter-and-the-goblet-of-fire"><img alt="Harry Potter and the Goblet of Fire" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1627044952l/58613424._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="Harry Potter and the Deathly Hallows (Harry Potter, #7)" rel="nofollow" href="https://www.goodreads.com/book/show/58613224-harry-potter-and-the-deathly-hallows"><img alt="Harry Potter and the Deathly Hallows" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1627042661l/58613224._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="The Lion, the Witch and the Wardrobe (Chronicles of Narnia, #2)" rel="nofollow" href="https://www.goodreads.com/book/show/132080146-the-lion-the-witch-and-the-wardrobe"><img alt="The Lion, the Witch and the Wardrobe" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1697079942l/132080146._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="Holes (Holes, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/38709.Holes"><img alt="Holes" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1618269830l/38709._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="Where the Sidewalk Ends" rel="nofollow" href="https://www.goodreads.com/book/show/30119.Where_the_Sidewalk_Ends"><img alt="Where the Sidewalk Ends" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1769901144l/30119._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="Charlotte’s Web" rel="nofollow" href="https://www.goodreads.com/book/show/24178.Charlotte_s_Web"><img alt="Charlotte’s Web" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1628267712l/24178._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="The Giver (The Giver, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/3636.The_Giver"><img alt="The Giver" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1342493368l/3636._SY160_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="James and the Giant Peach" rel="nofollow" href="https://www.goodreads.com/book/show/6689.James_and_the_Giant_Peach"><img alt="James and the Giant Peach" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1320412586l/6689._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="The Bad Beginning (A Series of Unfortunate Events, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/78411.The_Bad_Beginning"><img alt="The Bad Beginning" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1436737029l/78411._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="Bridge to Terabithia" rel="nofollow" href="https://www.goodreads.com/book/show/40940121-bridge-to-terabithia"><img alt="Bridge to Terabithia" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1532478367l/40940121._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="The Witches" rel="nofollow" href="https://www.goodreads.com/book/show/6327.The_Witches"><img alt="The Witches" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1351707720l/6327._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="Coraline" rel="nofollow" href="https://www.goodreads.com/book/show/17061.Coraline"><img alt="Coraline" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1493497435l/17061._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="The Wide Window[SUE #03 WIDE WINDOW][Hardcover]" rel="nofollow" href="https://www.goodreads.com/book/show/159777636-the-wide-window-sue-03-wide-window-hardcover"><img alt="The Wide Window[SUE #03 WIDE WINDOW][Hardcover]" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1696932788l/159777636._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="The Phantom Tollbooth" rel="nofollow" href="https://www.goodreads.com/book/show/378.The_Phantom_Tollbooth"><img alt="The Phantom Tollbooth" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1558858485l/378._SX98_.jpg" /></a></div>
+            <div class="gr_grid_book_container"><a title="Island of the Blue Dolphins" rel="nofollow" href="https://www.goodreads.com/book/show/41044096-island-of-the-blue-dolphins"><img alt="Island of the Blue Dolphins" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1533405446l/41044096._SX98_.jpg" /></a></div>
+          <noscript><br/>Share <a rel="nofollow" href="/">book reviews</a> and ratings with Gabrielle, and even join a <a rel="nofollow" href="/group">book club</a> on Goodreads.</noscript>
+          </div>
+        </div>
+      </section>
       <!-- <script src="https://www.goodreads.com/review/grid_widget/198544023.Gabrielle's%20bookshelf:%20read?cover_size=medium&hide_link=true&hide_title=true&num_books=24&order=a&shelf=read&sort=date_added&widget_id=1771271542" type="text/javascript" charset="utf-8"></script> -->
 
 
-          <!-- <style type="text/css" media="screen">
-        .gr_grid_container {
-          /* customize grid container div here. eg: width: 500px; */
-        }
-
-        .gr_grid_book_container {
-          /* customize book cover container div here */
-          float: left;
-          width: 98px;
-          height: 160px;
-          padding: 0px 0px;
-          overflow: hidden;
-        }
-      </style>
-      <div id="gr_grid_widget_1771266891">
-        Show static html as a placeholder in case js is not enabled - javascript include will override this if things work
-            <h2>
-      <a style="text-decoration: none;" rel="nofollow" href="https://www.goodreads.com/review/list/198544023-gabrielle-saab?shelf=read&utm_medium=api&utm_source=grid_widget">Gabrielle's bookshelf: read</a>
-    </h2>
-  <div class="gr_grid_container">
-    <div class="gr_grid_book_container"><a title="Pride and Prejudice" rel="nofollow" href="https://www.goodreads.com/book/show/129915654-pride-and-prejudice"><img alt="Pride and Prejudice" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1681804503l/129915654._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="1984" rel="nofollow" href="https://www.goodreads.com/book/show/61439040-1984"><img alt="1984" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1657781256l/61439040._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Jane Eyre" rel="nofollow" href="https://www.goodreads.com/book/show/10210.Jane_Eyre"><img alt="Jane Eyre" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1557343311l/10210._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="The Hobbit, or There and Back Again" rel="nofollow" href="https://www.goodreads.com/book/show/5907.The_Hobbit_or_There_and_Back_Again"><img alt="The Hobbit, or There and Back Again" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546071216l/5907._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Harry Potter and the Chamber of Secrets (Harry Potter, #2)" rel="nofollow" href="https://www.goodreads.com/book/show/15881.Harry_Potter_and_the_Chamber_of_Secrets"><img alt="Harry Potter and the Chamber of Secrets" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1474169725l/15881._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Harry Potter and the Goblet of Fire (Harry Potter, #4)" rel="nofollow" href="https://www.goodreads.com/book/show/58613424-harry-potter-and-the-goblet-of-fire"><img alt="Harry Potter and the Goblet of Fire" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1627044952l/58613424._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Harry Potter and the Deathly Hallows (Harry Potter, #7)" rel="nofollow" href="https://www.goodreads.com/book/show/58613224-harry-potter-and-the-deathly-hallows"><img alt="Harry Potter and the Deathly Hallows" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1627042661l/58613224._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="The Lion, the Witch and the Wardrobe (Chronicles of Narnia, #2)" rel="nofollow" href="https://www.goodreads.com/book/show/132080146-the-lion-the-witch-and-the-wardrobe"><img alt="The Lion, the Witch and the Wardrobe" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1697079942l/132080146._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Holes (Holes, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/38709.Holes"><img alt="Holes" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1618269830l/38709._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Where the Sidewalk Ends" rel="nofollow" href="https://www.goodreads.com/book/show/30119.Where_the_Sidewalk_Ends"><img alt="Where the Sidewalk Ends" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1769901144l/30119._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Charlotte’s Web" rel="nofollow" href="https://www.goodreads.com/book/show/24178.Charlotte_s_Web"><img alt="Charlotte’s Web" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1628267712l/24178._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="The Giver (The Giver, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/3636.The_Giver"><img alt="The Giver" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1342493368l/3636._SY160_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="James and the Giant Peach" rel="nofollow" href="https://www.goodreads.com/book/show/6689.James_and_the_Giant_Peach"><img alt="James and the Giant Peach" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1320412586l/6689._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="The Bad Beginning (A Series of Unfortunate Events, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/78411.The_Bad_Beginning"><img alt="The Bad Beginning" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1436737029l/78411._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Bridge to Terabithia" rel="nofollow" href="https://www.goodreads.com/book/show/40940121-bridge-to-terabithia"><img alt="Bridge to Terabithia" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1532478367l/40940121._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="The Witches" rel="nofollow" href="https://www.goodreads.com/book/show/6327.The_Witches"><img alt="The Witches" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1351707720l/6327._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Coraline" rel="nofollow" href="https://www.goodreads.com/book/show/17061.Coraline"><img alt="Coraline" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1493497435l/17061._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="The Wide Window[SUE #03 WIDE WINDOW][Hardcover]" rel="nofollow" href="https://www.goodreads.com/book/show/159777636-the-wide-window-sue-03-wide-window-hardcover"><img alt="The Wide Window[SUE #03 WIDE WINDOW][Hardcover]" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1696932788l/159777636._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="The Phantom Tollbooth" rel="nofollow" href="https://www.goodreads.com/book/show/378.The_Phantom_Tollbooth"><img alt="The Phantom Tollbooth" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1558858485l/378._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Island of the Blue Dolphins" rel="nofollow" href="https://www.goodreads.com/book/show/41044096-island-of-the-blue-dolphins"><img alt="Island of the Blue Dolphins" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1533405446l/41044096._SX98_.jpg" /></a></div>
-    <br style="clear: both"/><br/><a class="gr_grid_branding" style="font-size: .9em; color: #382110; text-decoration: none; float: right; clear: both" rel="nofollow" href="https://www.goodreads.com/user/show/198544023-gabrielle-saab">Gabrielle Saab's favorite books »</a>
-  <noscript><br/>Share <a rel="nofollow" href="/">book reviews</a> and ratings with Gabrielle, and even join a <a rel="nofollow" href="/group">book club</a> on Goodreads.</noscript>
-  </div>
-
-      </div>
-      <script src="https://www.goodreads.com/review/grid_widget/198544023.Gabrielle's%20bookshelf:%20read?cover_size=medium&hide_link=&hide_title=&num_books=24&order=a&shelf=read&sort=date_added&widget_id=1771266891" type="text/javascript" charset="utf-8"></script> -->
-  </aside>
-  <center><footer id="other-font" class="footer">
-      <p>
+  
+    </aside>
+    <footer id="other-font" class="footer"> <!-- can add footer image in style in footer tag here -->
+      <p class="cell-label-vis">
         <a href="https://neocities.org"
-        title="Neocities - Free Website Hosting"><img src="/images/footer/neocities.png" alt="Neocities Logo" title="This Website is Hosted by Neocities">
+          title="Neocities - Free Website Hosting"><img src="/images/footer/neocities.png" alt="Neocities Logo" title="This Website is Hosted by Neocities">
         </img></a>
         <br> •  •  • <a href="https://gabbyos.neocities.org">Gabby O S</a> Copyright (C) 2025-2026 <a href="https://gabbyos.neocities.org/whoami">Gabrielle Saab</a> • 
          •  •  The source code for this website is licensed under the <a href="">MIT License</a>.  •  •  •
@@ -326,20 +394,55 @@
         <nav aria-label="footer-navigation">
           <a href="https://gabbyos.neocities.org">homepage</a> | <a href="https://neocities.org/site/gabbyos">Neocities Profile</a> |
           <a href="#GitHub">view source</a> |
-          <a href="#/">discuss</a> | <a href="#">sitemap</a>
+          <a href="#/">discuss</a> | <a href="/sitemap.html">sitemap</a><br><hr />
+          <ul id="footerNavlist"> <!--style="visibility: hidden;" aria="hidden"-->
+            <li><a href="/index.html">Home</a></li>
+            <li>New Links Coming Soon &hearts; </li>
+            <li title="info '(coreutils) whoami invocation" alt="page coming soon"><!--<a href="/whoami.html" title="info '(coreutils) whoami invocation">-->whoami</li>
+            <li><a href="/index.html#contact" alt="page coming soon" title="Social Media accounts and things">Contact</a></li>
+            <li title="link coming soon"><!--<a href="/projects.html" title="Some apps and websites I've worked on">-->Projects</li>
+            <!-- <li><a href="/desktop.html" title="Login to GabbyOS">Desktop</a></li> -->
+            <li>
+              <ul id="sub-menu"><a href="/more.html" title="giffys, icons, adoptables, it's like 2005">Other</a>
+                <li><a href="/more.html#random">Random</a></li>
+              </ul>
+            </li>
+            <li><a href="/about.html" title="About this website; credits">About</a></li>
+            <li><a href="/blank.html">Blank Page</li>
+          </ul>
         </nav><br>
         <img src="/images/footer/forever_online.png"></img>
         <img src="/images/footer/people_pledge_badge_oldschool_cream_pink.svg"></img>
         <img src="/images/footer/thankspider.png"></img>
+        <button><a href='https://ko-fi.com/I3I21OUNG9' target='_blank'>
+          <img height='36' style='border:0px;height:36px;'
+           src='https://storage.ko-fi.com/cdn/kofi5.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' />
+          </a></button>
         <br>
         The opinions expressed herein are my own and do not represent those of my employer or any other third-parties in any way. | Fan content and all third-party content belongs to its rightful owners
         <br>
         01001101 01100001 01100100 01100101 00100000 01100010 01111001 00100000 01100001 00100000 01000111 01101001 01110010 01101100
       </p>
-    </footer></center>
+    </footer>
+    </div> <!-- closing div for .wrapper class -->
 
     <script type="text/javascript" src="/scripts/sparkles.js" defer></script>
     <script type="text/javascript" src="/scripts/discord.js" defer></script>
+    <script type="text/javascript" src="//js.ravelry.com/javascripts/dug.js"></script><!-- you can customize this template -->
+    <!-- copied from  -->
+    <script id="dugjs-template" type="text/x-dug-template">
+      {{#projects}}
+        <div class="rav_project">
+          <a class="rav_title" href="{{url}}">{{name}}</a>
+          <a class="rav_photo rav_photo_count_{{photoCount}}" href="#"><img src="{{thumbnail.src}}"></a>
+          <div class="rav_bar_wrapper rav_bar">
+            <div class="rav_bar_fill rav_bar" style="width:{{progress}}%;"></div>
+            <div class="rav_bar_text rav_bar">{{progress}}%</div>
+          </div>
+        </div>
+      {{/projects}}
+    </script>
+
 
     
   </body>
