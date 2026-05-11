@@ -18,5 +18,5 @@ async function discordChecker() {
     }
 };
 
-discordChecker();
+// discordChecker();
 setInterval(discordChecker, 2000);

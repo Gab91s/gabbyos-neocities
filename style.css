@@ -21,9 +21,17 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+    /* Theme Variables */
+  --bg-cold-spring: radial-gradient(circle at left, #8adf8d 40%, #79c1ff 40%, #fdff6f 41%, #ffa5cf 50%, #fff3f1 80%);
+  --bg-cold-spring-dark: radial-gradient(circle at left, #527e53 40%, #4d7597 40%, #f57f30 41%, #c76f98 50%, #fff3f165 80%);
+
+
+  --bg-winter-dark: #80b1d842;
+  --nav-bar-link-color: #777;
+
   /* Colors you'll see cascade through the elements */
-  --color-bg: #80b1d842; /* Used for the page body background */
-  --color-bg-alt: #ffffff; /* ... */
+  --color-bg: var(--bg-cold-spring, #527e538e); /* Used for the page body background */
+  /* --color-bg-alt: #ffffff; ... */
   --color-text-main: #000000; /* ... */
   --color-primary: #80144e; /* Headers and borders? */
   --color-text-footer: #555;
@@ -45,8 +53,21 @@
   }
 }
 
+*,
+*:before,
+*:after {
+  /* letter-spacing: 1.1px; */
+  box-sizing: border-box;
+}
+
+  body,
+  html {
+    /* background: #1c1d22; */
+    font-family: "VT323", monospace;
+  }
+
 body {
-  background-color: var(--color-bg);
+  background: var(--color-bg, #0088cc);
   color: var(--color-text-main);
   font-family: Verdana;
   overflow: auto;
@@ -100,61 +121,33 @@ body {
 
 .cell-label-vis {visibility: visible;}
 
-.footer {
-  /* margin-top: auto; */
-  text-align: center;
-  font-size: 0.9em;
-  color: var(--color-text-footer);
-  padding: 10px;
-}
-
-.footer a:hover {
-    color: var(--color-link-hover-footer);
-}
-
-#footerNavlist
-{
-list-style-type: none;
-margin: 0;
-padding: 0;
-text-align: center; /* this line might not be doing anything */
-align-items: center; /* this line might not be doing anything either */
-justify-content: center;
-display: flex;
-}
-
-#footerNavlist li
-{
-border-left: 1px solid #000;
-float: left;
-line-height: 1.1em;
-margin: 0 .5em 0 -.5em;
-padding: 0 .5em 0 .5em;
-}
-#footerNavlist .sub-menu {
-	display: none;
-}
-
-#footerNavlist li:hover ul {
-	display: block;
-}
 
 
 *,
 *:before,
 *:after {
-  letter-spacing: 1.1px;
+  /* letter-spacing: 1.1px; */
+  box-sizing: border-box;
 }
 
-  body,
-  html {
-    /* background: #1c1d22; */
-    font-family: "VT323", monospace;
-  }
+
+
+
+header h1{
+  margin: 0px;
+}
+
+.pageHeader {
+  text-align: center;
+  text-indent: 0px;
+}
 
 #main-navbar{
     /* background: #1c1d22; */
     font-family: "VT323", monospace;
+    letter-spacing: 1.1px;
+    text-shadow: 0 0 .5em #ffffff;
+    text-shadow: #3a0c5f 0 0 .2em;
 }
 
 #main-navbar .menu {
@@ -196,6 +189,7 @@ padding: 0 .5em 0 .5em;
 
   &:hover a {
     color: var(--color-link-hover-navbar);
+    text-shadow: none;
   }
 
   &:not(:last-child) {
@@ -208,6 +202,45 @@ padding: 0 .5em 0 .5em;
   0% {
     background-position-x: 390px;
   }
+}
+
+.footer {
+  /* margin-top: auto; */
+  text-align: center;
+  font-size: 0.9em;
+  color: var(--color-text-footer);
+  padding: 10px;
+}
+
+.footer a:hover {
+    color: var(--color-link-hover-footer);
+}
+
+#footerNavlist
+{
+list-style-type: none;
+margin: 0;
+padding: 0;
+text-align: center; /* this line might not be doing anything */
+align-items: center; /* this line might not be doing anything either */
+justify-content: center;
+display: flex;
+}
+
+#footerNavlist li
+{
+border-left: 1px solid #000;
+float: left;
+line-height: 1.1em;
+margin: 0 .5em 0 -.5em;
+padding: 0 .5em 0 .5em;
+}
+#footerNavlist .sub-menu {
+	display: none;
+}
+
+#footerNavlist li:hover ul {
+	display: block;
 }
 
 #other-font {
@@ -232,7 +265,7 @@ padding: 0 .5em 0 .5em;
   font-weight: bolder;
   color:#27190d;
 }
- #warm-cottage .snow-container {
+ /* #warm-cottage .snow-container {
     position: relative;
     overflow: hidden;
     background-image: linear-gradient(to top,
@@ -242,15 +275,26 @@ padding: 0 .5em 0 .5em;
      rgba(15, 9, 95, 0.644), rgba(7, 48, 182, 0.6), rgba(46, 4, 235, 0.61)),
     url("/images/backgrounds/mountain-ground-decorative-transparent.jpg");
     background-size: contain;
+  } */
+    #warm-cottage .rain-container {
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(to top,
+     rgba(50, 82, 61, 0.082),  rgba(18, 77, 28, 0.347),  rgba(34, 24, 24, 0.315), rgba(3, 3, 3, 0.411),
+     rgba(22, 22, 22, 0.37), rgba(34, 35, 39, 0.534),  rgba(58, 34, 42, 0.39),  rgba(39, 18, 6, 0.589),
+     rgba(36, 35, 35, 0.747),rgba(44, 21, 8, 0.658), rgba(48, 11, 63, 0.6), rgba(2, 55, 99, 0.664),
+     rgba(15, 9, 95, 0.644), rgba(7, 48, 182, 0.6), rgba(46, 4, 235, 0.61)),
+    url("/images/backgrounds/mountain-ground-decorative-transparent.jpg");
+    background-size: contain;
   }
 
-  #warm-cottage .snow {
+  /* #warm-cottage .snow {
     position: absolute; /* Position relative to the container */
     border-radius: 50%;
     animation: fall linear infinite;
     pointer-events: none; /* Allows clicks on content behind the snow */
     background-color: transparent;
-  }
+  } */
 
   @keyframes fall {
     0% { top: -10%; }
@@ -678,7 +722,8 @@ background:var(--light)
 /* ==== Dark Mode Styling ==== */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #19176d;
+    /* --color-bg: #19176d; */
+    --color-bg: var(--bg-cold-spring-dark, #2f50acda);
     --color-text-main: rgba(173, 216, 255);
     --color-text-footer: #fcbb7fd3;
     --color-links: #f4bedb;
